@@ -1,5 +1,15 @@
-class PhonebookManager:
+'''
+* Language: Python
+* Date: Oct 04, 2024
+* Author: Jin Yoo (lst80302@naver.com)
+* title: python class를 통한 전화번호부 관리 소스코드
+* purpose: 전화번호 추가/검색/수정/삭제/확인 기능 구현
+* memo:
+    * Phonebook_Dictionary.py 소스코드의 내용을 단순히 class를 활용해 바꾼 것 뿐이라 빈약함
+    * 전반적으로 크게 수정할 예정이라 자세한 주석 없음
+'''
 
+class PhonebookManager:
     def make_phonebook_dict(self):
         try:
             with open(self.filename, 'r', encoding='utf-8') as inputFile:

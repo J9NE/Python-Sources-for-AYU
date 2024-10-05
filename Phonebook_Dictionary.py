@@ -1,3 +1,11 @@
+'''
+* Language: Python
+* Date: Sep 27, 2024
+* Author: Jin Yoo (lst80302@naver.com)
+* title: python dictionary 자료구조를 활용한 전화번호부 관리 소스코드
+* purpose: 전화번호 추가/검색/수정/삭제/확인 기능 구현
+'''
+
 def phonebook_manager():
     # '전화번호부'를 저장할 빈 딕셔너리 생성
     phonebook = {}
@@ -22,7 +30,7 @@ def phonebook_manager():
             # name: 추가하고자 하는 전화번호의 주인 이름을 저장하는 변수
             name = input("이름을 입력하세요: ")
             
-            # 이미 전화번호부에 추가된 이름인지 확인하는 조건문
+            # ! [조건] 이미 전화번호부에 추가된 이름인지 확인하는 조건문
             if name in phonebook:
                 print("이미 전화번호부에 등록되어 있는 이름입니다!")
                 print(f"{name}: {phonebook[name]}")

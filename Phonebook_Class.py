@@ -128,5 +128,5 @@ class PhonebookManager:
                 print("*"*40)
 
 # 프로그램 실행 
-A = PhonebookManager("PhoneNumbers.txt")
+A = PhonebookManager("classA_PhoneNumbers.txt")
 A.run()

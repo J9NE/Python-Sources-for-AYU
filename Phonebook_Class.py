@@ -87,13 +87,13 @@ class PhonebookManager:
     # 6. 형성한 파일 추출 기능
     def export_phonebook(self):
         # 추출할 파일 이름
-        export_filename = input("저장할 파일의 이름을 작성하세요. (예: classA_export):")
+        export_filename = input("저장할 파일의 이름을 작성하세요. (예: classA_export):") + ".txt"
         try:
             with open(export_filename, "w", encoding='utf-8') as export_file:
                 export_file.write(f"{name_header:<{name_header_width}}{phone_number_header}\n"+"="*30+"\n")
                 for name, phone_number in self.phonebook.items():
                     export_file.write(f"{name:<{name_header_width}}{phone_number}\n")
-            print(f"전화번호부가 \'{export_filename}.txt\'로 내보내졌습니다.\n")
+            print(f"전화번호부가 \'{export_filename}\'로 내보내졌습니다.\n")
         except Exception as e:
             print(f"파일 추출 중 오류 발생: {e}")
 
